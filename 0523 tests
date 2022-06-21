@@ -1,0 +1,79 @@
+test1
+#!/bin/bash
+#This script displays the date and who's logged on
+echo The time and date are:
+date
+echo "Let's see who's logged into the system:"
+who
+
+
+test2
+#!/bin/bash
+#display user information from the system.
+echo "User info for userid: $USER"
+echo UID: $UID
+echo HOME: $HOME
+
+
+test3
+#!/bin/bash
+# testing variables
+days=10
+guest="Katie"
+echo "$guest checked in $days days ago"
+days=5
+guest="Jessica"
+echo "$guest checked in $days days ago"
+
+
+test4
+#!/bin/bash
+# assigning a variable value to another variable
+
+value1=10
+value2=$value1
+echo The resulting value is $value2
+
+
+test5
+#!/bin/bash
+#using the backtick character
+testing='date'
+echo "The date and time are: " $testing
+
+
+test6
+#!/bin/bash
+# An example of using the expr command
+var1=10
+var2=20
+var3='expr $var2 / $var1'
+echo The result is $var3
+
+
+test7
+#!/bin/bash
+var1=100
+var2=50
+var3=45
+var4=$[$var1 * ($var2 - $var3)]
+echo The final result is $var4
+
+
+test13
+#!/bin/bash
+# testing the exit status
+var1=10
+var2=30
+var3=$[$var1 + $var2]
+echo The answer is $var3
+exit 5
+
+
+test14
+#!/bin/bash
+# testing the if statement
+if date
+then
+        echo "it worked"
+fi
